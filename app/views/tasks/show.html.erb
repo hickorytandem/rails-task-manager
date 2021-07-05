@@ -3,3 +3,4 @@
 <p><%= @task.completed ? "Complete" : "Not completed" %></p>
 <%= link_to "Return", tasks_new_path %>
 <%= link_to "Edit", edit_task_path %>
+<%= link_to "Delete", task_path(@task), method:  delete, data: { confirm: "Are you sure?"} %>
